@@ -1,0 +1,118 @@
+/* ../../common.blocks/attach/attach.styl:begin */
+.attach__file,
+.attach__no-file,
+.attach .button__text,
+.attach .attach_disabled .attach__clear {
+  display: none;
+}
+/* ../../common.blocks/attach/attach.styl:end */
+/* ../../common.blocks/icon/icon.styl:begin */
+.icon {
+  display: inline-block;
+  text-align: center;
+  background: 50% no-repeat;
+/* Hack for correct baseline positioning */
+/*
+     * Чтобы иконка правильно позиционировалась внутри блочного контекста,
+     * нужно прописать родителю свойство line-height со значением, равным высоте иконки
+     */
+}
+.icon:empty:after {
+  visibility: hidden;
+  content: '\00A0';
+}
+.icon > img,
+.icon > svg {
+  margin: -5.15em 0 -5em; /* 0.15 — magic number, empirically found */
+  vertical-align: middle;
+}
+/* ../../common.blocks/icon/icon.styl:end */
+/* ../../common.blocks/checkbox/_type/checkbox_type_button.styl:begin */
+.checkbox.checkbox_type_button .checkbox__control {
+  position: absolute;
+  visibility: hidden;
+}
+/* ../../common.blocks/checkbox/_type/checkbox_type_button.styl:end */
+/* ../../common.blocks/popup/popup.styl:begin */
+.popup {
+  position: absolute;
+}
+/* ../../common.blocks/popup/popup.styl:end */
+/* ../../common.blocks/image/image.styl:begin */
+.image {
+  border: 0;
+}
+/* ../../common.blocks/image/image.styl:end */
+/* ../../common.blocks/menu/menu.styl:begin */
+.menu {
+  overflow-y: auto;
+}
+/* ../../common.blocks/menu/menu.styl:end */
+/* ../../common.blocks/modal/modal.styl:begin */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.modal__table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.modal__cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal__content {
+  display: inline-block;
+  text-align: left;
+}
+/* ../../common.blocks/modal/modal.styl:end */
+/* ../../common.blocks/radio/_type/radio_type_button.styl:begin */
+.radio.radio_type_button .radio__control {
+  position: absolute;
+  visibility: hidden;
+}
+/* ../../common.blocks/radio/_type/radio_type_button.styl:end */
+/* ../../common.blocks/select/select.styl:begin */
+.select {
+  display: inline-block;
+}
+/* ../../common.blocks/select/select.styl:end */
+/* ../../common.blocks/z-index-group/z-index-group.styl:begin */
+.z-index-group_level_0 {
+  z-index: 1000;
+}
+.z-index-group_level_1 {
+  z-index: 2000;
+}
+.z-index-group_level_2 {
+  z-index: 3000;
+}
+.z-index-group_level_3 {
+  z-index: 4000;
+}
+.z-index-group_level_4 {
+  z-index: 5000;
+}
+.z-index-group_level_5 {
+  z-index: 6000;
+}
+.z-index-group_level_6 {
+  z-index: 7000;
+}
+.z-index-group_level_7 {
+  z-index: 8000;
+}
+.z-index-group_level_8 {
+  z-index: 9000;
+}
+.z-index-group_level_9 {
+  z-index: 10000;
+}
+/* ../../common.blocks/z-index-group/z-index-group.styl:end */
